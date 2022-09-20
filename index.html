@@ -1,0 +1,82 @@
+<!doctype html>
+<html id="menu1">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" contact="説明文">
+        <title>メタバース・栄光</title>
+        <link rel="stylesheet" href="css/sanitize.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="favicon.ico">
+    </head>
+    <body>
+        <div class="hed">
+            <img src="images/top1.png" class="top">
+            <div class="main">
+                <img src="images/main.png" class="main-image">
+                <button type="button" class="btn btn-lg btn-primary main-btm button"><span>入場→</span></button>
+            </div>
+        </div>
+        <nav id="global_nav">
+            <div class="wrapper">
+                <ul>
+                    <li class="item"><a href="#menu1">TOP</a></li>
+                    <li class="item"><a href="#menu2">入場</a></li>
+                    <li class="item"><a href="#menu3">用途</a></li>
+                    <li class="item"><a href="#menu4">栄光学園</a></li>
+                    <li class="item"><a href="javascript:alert('Googleフォームへ飛ぶ');">問い合わせ</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="nakami">
+        <div class="block">
+            <h1><b>メタバース・栄光</b></h1>
+            <p>「メタバース・栄光」は有志により作成された、<a href="https://cluster.mu">cluster</a>上の栄光学園です。</p>
+            <img src="images/top2.png" width="100%">
+        </div>
+        <div class="block" id="menu2">
+            <h1><b>入場について</b></h1>
+            <p>入場するには申し込みが必要となります。「メタバース・栄光」に入場したい方は詳細ページに移動して、申し込みをお願いします。</p>
+            <button type="button" class="btn btn-lg btn-primary"><span>詳細ページへ</span></button><p></p>
+            <img src="images/top3.png" width="100%">
+        </div>
+        <div class="block" id="menu3">
+            <h1><b>用途</b></h1>
+            <div class="all-set">
+                <div class="all">
+                    <div class="one">
+                        <img src="images/top4.png" class="img">
+                        <p>生徒たちの交流場</p>
+                    </div>
+                    <div class="one">
+                        <img src="images/top5.png" class="img">
+                        <p>校内見学</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block" id="menu4">
+            <h1><b>栄光とは</b></h1>
+            <p>栄光学園中学高等学校は、神奈川県鎌倉市玉縄四丁目に所在し、中高一貫教育の私立男子中学校・高等学校である。</p>
+            <button type="button" class="btn btn-lg btn-primary"><span>栄光公式ページへ</span></button><p></p>
+            <img src="images/top1.png" width="100%">
+        </div>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script>
+            var nav_pos = $("#global_nav").offset().top;
+            var nav_height = $("#global_nav").outerHeight();
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > nav_pos) {
+                    $("body").css("padding-top", nav_height);
+                    $("#global_nav").addClass("fixed");
+                } else {
+                    $("body").css("padding-top", 0);
+                    $("#global_nav").removeClass("fixed");
+                }
+            });
+        </script>
+    </body>
+</html>

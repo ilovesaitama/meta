@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" contact="説明文">
+        <meta name="description" contact="栄光生の有志達によって作成された、cluster上の栄光学園です。">
+        <meta name="robots" content="noindex">
         <title>メタバース・栄光</title>
         <link rel="stylesheet" href="css/sanitize.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -15,7 +16,7 @@
             <img src="images/top1.png" class="top">
             <div class="main">
                 <img src="images/main.png" class="main-image">
-                <button type="button" class="btn btn-lg btn-primary main-btm button"><span>入場→</span></button>
+                <button type="button" onclick="alert('詳細ページへ飛びます');" class="btn btn-lg btn-primary main-btm button"><span>入場→</span></button>
             </div>
         </div>
         <nav id="global_nav">
@@ -24,8 +25,8 @@
                     <li class="item"><a href="#menu1">TOP</a></li>
                     <li class="item"><a href="#menu2">入場</a></li>
                     <li class="item"><a href="#menu3">用途</a></li>
-                    <li class="item"><a href="#menu4">栄光学園</a></li>
-                    <li class="item"><a href="javascript:alert('Googleフォームへ飛ぶ');">問い合わせ</a></li>
+                    <li class="item"><a href="#menu4">コメント</a></li>
+                    <li class="item"><a href="#menu5">栄光学園</a></li>
                 </ul>
             </div>
         </nav>
@@ -38,7 +39,7 @@
         <div class="block" id="menu2">
             <h1><b>入場について</b></h1>
             <p>入場するには申し込みが必要となります。「メタバース・栄光」に入場したい方は詳細ページに移動して、申し込みをお願いします。</p>
-            <button type="button" class="btn btn-lg btn-primary"><span>詳細ページへ</span></button><p></p>
+            <button type="button" onclick="alert('詳細が決まったら作成');" class="btn btn-lg btn-primary"><span>詳細ページへ</span></button><p></p>
             <img src="images/top3.png" width="100%">
         </div>
         <div class="block" id="menu3">
@@ -54,16 +55,53 @@
                         <p>校内見学</p>
                     </div>
                 </div>
+                <div class="all">
+                    <div class="one">
+                        <img src="images/top1.png" class="img">
+                        <p>避難経路の確認</p>
+                    </div>
+                    <div class="one">
+                        <img src="images/top2.png" class="img">
+                        <p>文化祭</p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="block" id="menu4">
+            <h1><b>コメント</b></h1>
+            <div class="balloon1">
+                <p>とても楽しく画期的で、<br>また遊びに来ようと思った。</p>
+            </div>
+            <div class="balloon1">
+                <p>クオリティが戦隊的に高く、<br>最近の学生はすごいと思った。</p>
+            </div>
+            <img src="images/top2.png" width="100%">
+        </div>
+        <div class="block" id="menu5">
             <h1><b>栄光とは</b></h1>
             <p>栄光学園中学高等学校は、神奈川県鎌倉市玉縄四丁目に所在し、中高一貫教育の私立男子中学校・高等学校である。</p>
-            <button type="button" class="btn btn-lg btn-primary"><span>栄光公式ページへ</span></button><p></p>
+            <button type="button" onclick="location.href='https://ekh.jp'" class="btn btn-lg btn-primary"><span>栄光公式ページへ</span></button><p></p>
             <img src="images/top1.png" width="100%">
         </div>
         </div>
-        
+        <footer>
+            <div class="footer">
+                <ul>
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="javascript:alert('今後詳細が決定したら作成予定');">詳細</a></li>
+                    <li><a href="javascript:alert('完成したら作成予定');">スタッフ</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://ekh.jp">栄光学園</a></li>
+                    <li><a href="javascript:alert('Googleフォームへ');">問い合わせ</a></li>
+                    <li><a href="javascript:alert('詳細が決まったら');">利用規約</a></li>
+                </ul>
+                
+            </div>
+            <div class="footer2">
+                <a href="https://ekh.jp"><img src="https://ekh.jp/common/img/footer/f_logo_pc.gif" alt="栄光学園中学高等学校" width="200px" height="32px"></a>
+            </div>
+        </footer>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script>
             var nav_pos = $("#global_nav").offset().top;
